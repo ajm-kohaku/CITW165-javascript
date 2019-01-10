@@ -53,8 +53,7 @@ footer {
 #page > main {
     grid-area: main;
     background: var(--main-bg-color);
-    padding: 1.5rem;
-    height: 100%;
+    padding: 2rem 1.5rem;
 }
 
 #page > footer {
