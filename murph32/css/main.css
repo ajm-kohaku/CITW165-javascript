@@ -50,10 +50,14 @@ footer {
     margin-bottom: .05em;
 }
 
-#page > main {
+#page > #main {
     grid-area: main;
     background: var(--main-bg-color);
     padding: 2rem 1.5rem;
+    background-image: url('../img/mtg_selesnya_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #page > footer {
@@ -107,6 +111,15 @@ h1 {
     font-size: 4vw;
     font-variant: small-caps;
     margin-top: 4px;
+    border-bottom: 1px solid var(--primary-color);
+    text-shadow: .05em .05em var(--secondary-color);
+}
+
+h2 {
+    font-size: 4vw;
+    font-variant: small-caps;
+    margin-top: 3px;
+    padding-top: 4px;
     border-bottom: 1px solid var(--primary-color);
     text-shadow: .05em .05em var(--secondary-color);
 }
