@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+#page > #main {
+    grid-area: main;
+    background: var(--main-bg-color);
+    padding: 2rem 1.5rem;
+    background-image: url('../img/theogonia.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    background: url("../img/table_conn_logo02.png") no-repeat;
+    width: 280px;
+    height: 98px;
+    float: left;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#info {
+    background-color: #1e1b1e;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 80px;
+    min-height: 100%;
+    right: 15%;
+}
