@@ -83,6 +83,7 @@ html {
 .nav {
     overflow: hidden;
     width: 100%;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nav ul {
@@ -118,7 +119,7 @@ html {
 
 h1 {
     font-size: 200%;
-    margin-bottom: 0px;
+    margin: 5px 0px;
     font-variant: small-caps;
     border-bottom: 1px solid var(--primary-color);
     text-shadow: .05em .05em var(--secondary-color);
@@ -129,6 +130,12 @@ h3 {
     margin: 1.5em 0 0 0;
     color: #adffda;
     font-weight: normal;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 70%;
 }
 
 .convention-logo {
@@ -143,27 +150,30 @@ h3 {
 }
 
 #event-location {
-  text-transform: uppercase;
-  text-align: center; 
-  font-size: 120%;
-  margin-top: 10px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff; 
-  padding: 10px 0px;}
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0px;
+}
 
-#event-rate{
-  text-decoration: line-through;
+#event-rate {
+    text-decoration: line-through;
     float: left;
-  padding-top: 10px;}
+    padding-top: 10px;
+}
 
-#early-bird-price {  
-  font-size: 440%;
-  color: #ffb87a;
-  padding: 15px 0px 20px 0px;
-  margin: 15px 0px;
+#early-bird-price {
+    font-size: 440%;
+    color: #ffb87a;
+    padding: 15px 0px 20px 0px;
+    margin: 15px 0px;
 }
 
 #early-bird-expire {
-  text-transform: uppercase;
-  color: #ffb87a;
-  font-size: 75%;}
+    text-transform: uppercase;
+    color: #ffb87a;
+    font-size: 75%;
+}
