@@ -5,13 +5,13 @@
     Exercise: Exercise #5
 **************************/
 
-var message = "";
+var message = '';
 
 function parseIntFromString(value) {
     'use strict';
     var parsed = parseInt(value, 10);
     if (isNaN(value)) {
-        message = "Invalid Integer Provided. Please try again.";
+        message = 'Invalid Integer Provided. Please try again.';
         return 0;
     }
     return parsed;
@@ -20,32 +20,33 @@ function parseIntFromString(value) {
 function calc() {
     'use strict';
     var entry, letterGrade;
-    entry = parseIntFromString(document.getElementById("score").value);
+    entry = parseIntFromString(document.getElementById('score').value);
     if (entry >= 90 && entry <= 100) {
-        letterGrade = "A";
+        letterGrade = 'A';
     } else if (entry >= 80 && entry <= 89) {
-        letterGrade = "B";
+        letterGrade = 'B';
     } else if (entry >= 68 && entry <= 79) {
-        letterGrade = "C";
+        letterGrade = 'C';
     } else if (entry >= 60 && entry <= 67) {
-        letterGrade = "D";
+        letterGrade = 'D';
     } else if (entry >= 0 && entry <= 60) {
-        letterGrade = "F";
+        letterGrade = 'F';
     } else if (entry > 100) {
-        letterGrade = "INVALID";
+        letterGrade = 'INVALID';
         message = "Look at you overachiever! But you can't get a score over 100";
     } else if (entry < 0) {
-        letterGrade = "INVALID";
+        letterGrade = 'INVALID';
         message = "Do you really feel that bad about yourself? You can't get worse than a 0, so don't even try to enter something so low.";
     } else {
-        letterGrade = "INVALID";
+        letterGrade = 'INVALID';
+        message = 'Come on! Type something! I dare ya!';
     }
 
     if (letterGrade !== 'INVALID' && message.length < 1) {
-        message = "Number grade = " + entry + "\n Letter grade = " + letterGrade;
+        message = 'Number grade = ' + entry + '\n Letter grade = ' + letterGrade;
     }
 
     alert(message);
 }
 
-document.getElementById("submit").onclick = calc();
+document.getElementById('submit').onclick = calc();
