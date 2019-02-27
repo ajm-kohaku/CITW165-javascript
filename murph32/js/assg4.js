@@ -8,7 +8,7 @@
 (function () {
 
     // PART ONE: CREATE HOTEL OBJECT AND WRITE OUT THE OFFER DETAILS
-    var eventLocation, eventRate, earlyBirdPrice, 
+    var eventLocation, eventRate, earlyBirdPrice,
         expiryMsg, today, elEnds,
         weekFromToday, day, date, month, year, dayNames, monthNames;
 
@@ -51,3 +51,15 @@
     elEnds = document.getElementById('early-bird-expire');
     elEnds.innerHTML = offerExpires(today);
 }());
+
+var dropMenu = document.getElementById("navDropDown");
+
+function drop() {
+    if (dropMenu.style.display == "none") {
+        dropMenu.style.display = "block";
+    } else {
+        dropMenu.style.display = "none";
+    }
+}
+
+document.getElementById("iconHolder").onclick = drop();

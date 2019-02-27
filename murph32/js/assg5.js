@@ -50,3 +50,6 @@ function calc() {
 }
 
 document.getElementById('submit').onclick = calc();
+
+var dropMenu = document.getElementById("navDropDown");
+var dropState = dropMenu.style.display;
