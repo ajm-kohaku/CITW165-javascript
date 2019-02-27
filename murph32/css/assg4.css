@@ -80,23 +80,23 @@ html {
     text-align: center;
 }
 
-nav {
+.nav {
     overflow: hidden;
     width: 100%;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-nav ul {
+.nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.nav ul li {
     float: left;
 }
 
-nav ul li a {
+.nav ul li a {
     display: block;
     padding: .5em;
     /*    border: 1px solid var(--primary-accent-color);*/
@@ -107,12 +107,12 @@ nav ul li a {
     background-color: var(--secondary-accent-color);
 }
 
-nav ul a:focus {
+.nav ul a:focus {
     background-color: var(--secondary-color);
     border-color: var(--secondary-accent-color);
 }
 
-nav ul a:hover {
+.nav ul a:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-accent-color);
 }
@@ -176,46 +176,4 @@ h5 {
     text-transform: uppercase;
     color: #ffb87a;
     font-size: 75%;
-}
-
-#navDropDown {
-    padding: 15px;
-    margin: auto;
-    margin-top: 0px;
-    text-align: center;
-    font-weight: lighter;
-    font-family: 'Oswald', sans-serif;
-    font-size: 130%;
-    text-shadow: 0 0 5px rgba(7, 7, 7, 0.8);
-    background-color: rgba(219, 232, 238, .5);
-    box-shadow: 2px 2px 8px 1px rgba(255, 98, 0, .4); 
-}
-
-#navDropDown ul {
-    margin: auto;
-    padding: 0px;
-    list-style: none;
-}
-
-#navDropDown li a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-#iconHolder:hover {
-    cursor: pointer;
-}
-
-nav i:hover, a:hover {
-    text-shadow: 0px 0px 10px rgb(255, 98, 0), 0 0 5px rgb(255, 98, 0);
-}
-
-@media screen and (max-width: 1000px) {
-	nav ul {
-		display: none;
-    }
-    
-    #iconHolder {
-        display: initial;
-    }
 }
