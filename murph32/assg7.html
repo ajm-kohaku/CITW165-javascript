@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Assignment 6</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/assg6.css">
+    <link rel="stylesheet" href="css/assg7.css">
 </head>
 
 <body>
@@ -31,13 +31,16 @@
         <section id="main">
             <div id="list-container">
                 <h1 class="list-header"></h1>
-                <h2 class="list-sub-header">Game Systems Played</h2>
-                <ul class="custom-list">
-                    <li class="custom-list-item">Pathfinder <em>Roleplaying Game</em></li>
-                    <li class="custom-list-item">Dungeons &amp; Dragons 5e</li>
-                    <li class="custom-list-item">Savage Worlds</li>
-                    <li class="custom-list-item">Cortex Systems</li>
-                </ul>
+                <h2 id="list-sub-header">Game Systems Played</h2>
+                <form action="fake-success.html">
+                    <div class="label-input">
+                        <label for="systemInput">Game System</label>
+                        <input type="text" id="systemInput" />
+                    </div>
+                    <div id="buttons">
+                        <a data-state="record" href="">record</a>
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -45,7 +48,5 @@
             <div>Designed by Amber Murphy 2019<sup>&copy;</sup> for LCC CITW coursework</div>
         </footer>
     </main>
-    <script src="js/assg6.js"></script>
-</body>
-
-</html>
+    <script src="js/assg7.js"></script>
+</body></html>

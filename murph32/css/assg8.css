@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+#list-container {
+    background-color: #000;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    max-width: 480px;
+    margin: 0px auto;
+}
+
+.list-header {
+    background-image: url(../img/kinglogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom: none;
+    text-align: center;
+    text-indent: -1000%;
+    height: 75px;
+    line-height: 75px;
+    width: 117px;
+    margin: 0 auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+.list-sub-header {
+    border-bottom: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 0 0 23px 0;
+}
+
+.list-sub-header span {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    top: -5px;
+    height: 22px;
+    width: 26px;
+    padding: 4px 0 0 0;
+}
+
+.custom-list {
+    background-color: #584f4d;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list-item {
+    background-color: #8AA1B1;
+    color: #fff;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #044389;
+    font-size: 24px;
+    letter-spacing: .05em;
+    list-style-type: none;
+    text-shadow: 2px 2px 1px #044389;
+    height: 50px;
+    padding-left: 1em;
+    padding-top: 10px;
+}
+
+#buttons {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#buttons a {
+    width: 100px;
+    height: 100px;
+    text-indent: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.complete {
+    font-size: 24px;
+    list-style-type: none;
+    background-color: #999;
+    color: #fff;
+    background-image: url("../img/icon-trash.png");
+    background-position: right, center;
+    background-repeat: no-repeat;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #b0b0b0;
+    text-shadow: 2px 2px 1px #333;
+    padding: 10px 1em;
+}
+.complete a {display:block;}
+
+
+#newItemButton {
+    padding: 10px 20px 75px 20px;
+    display: none;
+}
+
+#newItemForm {
+    display: block;
+    padding: 20px;
+}
+
+#itemDescription {
+    width: 360px;
+}
+
+input[type='text'] {
+    background-color: #999;
+    color: #333;
+    font-size: 24px;
+    width: 96%;
+    padding: 4px 6px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+#newItemForm input[type='submit'] {
+    margin-top: 0;
+    text-align: left;
+}
+
+input[type='submit'],
+a.add,
+button,
+a.show {
+    background-color: #cb6868;
+    color: #f3dad1;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+input[type='submit'],
+a.add,
+button {
+    float: right;
+}
+
+input[type='text']:focus {
+    border: 1px solid #fff;
+    background-color: #fff;
+    outline: none;
+}
+
+input[type='submit']:hover,
+a.add:hover,
+a.show:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#line-space {
+    font-size: 2px;
+}
