@@ -1,0 +1,240 @@
+:root {
+    --main-bg-color: #E6E6E6;
+    --primary-color: #044389;
+    --secondary-color: #8AA1B1;
+    --primary-accent-color: #66101F;
+    --secondary-accent-color: #273C2C;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 125px auto 40px;
+    /*    background-color: var(--secondary-accent-color);*/
+    color: var(--main-bg-color);
+    height: calc(100% - 20px);
+    background-image: url('../img/mtg_selesnya_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header,
+.footer {
+    background-color: var(--secondary-accent-color);
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+}
+
+.content {
+    grid-area: content;
+    width: 100%;
+    margin: 0px;
+
+    display: grid;
+    grid-template-areas: "inner-content sidebar gutter";
+    grid-template-columns: auto 250px 280px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 0px 15px;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inner-content {
+    grid-area: inner-content;
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav {
+    overflow: hidden;
+    width: 100%;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    padding: .5em;
+    /*    border: 1px solid var(--primary-accent-color);*/
+    border-radius: .5em;
+    margin: .25em;
+    text-decoration: none;
+    color: var(--main-bg-color);
+    background-color: var(--secondary-accent-color);
+}
+
+.nav ul a:focus {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-accent-color);
+}
+
+.nav ul a:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-accent-color);
+}
+
+h1 {
+    font-size: 200%;
+    margin: 5px 0px;
+    font-variant: small-caps;
+    border-bottom: 1px solid var(--primary-color);
+    text-shadow: .05em .05em var(--secondary-color);
+}
+
+
+h3 {
+    margin: 1.5em 0 0 0;
+    color: #adffda;
+    font-weight: normal;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 70%;
+}
+
+#assg9-parts {
+    width: 640px;
+    float: right;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Forms */
+
+form {
+    margin: 0;
+    font-size: 160%;
+}
+
+.third form {
+    width: 90%;
+}
+
+label {
+    float: left;
+    width: 6em;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    border-radius: 3px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #efefef;
+    font-size: 100%;
+    width: 100%;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+textarea {
+    height: 5em;
+    line-height: 1.4em;
+}
+
+input[type=submit] {
+    background-color: #1fb684;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    clear: left;
+    float: right;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    margin: 0.5em 0 0 0;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.page {
+    max-width: 640px;
+    margin: 0 auto 30px auto;
+}
+
+.panel {
+    background-color: #fff;
+    color: #666;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+/**********  ACCORDION **********/
+
+.accordion,
+.menu {
+    background-color: #f2f2f2;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.accordion li {
+    padding: 0;
+    list-style-type: none;
+}
+
+.accordion-control {
+    background-color: #303030;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    margin: 0;
+    border-top: 1px solid #666;
+}
+
+.accordion-panel {
+    display: none;
+}
+
+.accordion-panel p {
+    margin: 20px;
+}
+
+.accordion-panel img {
+    display: block;
+    clear: left;
+}

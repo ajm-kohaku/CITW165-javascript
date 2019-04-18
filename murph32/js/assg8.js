@@ -1,3 +1,10 @@
+/**************************
+    Date: 2019-04-11
+    Author: Amber Murphy
+    Class: CITW 165
+    Exercise: Exercise #8
+    code modified from book example
+**************************/
 $(function () {
 
     // SETUP
