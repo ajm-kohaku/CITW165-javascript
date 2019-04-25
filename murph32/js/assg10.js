@@ -3,7 +3,7 @@
     Author: Amber Murphy
     Class: CITW 165
     Exercise: Exercise #10
-    code modified from book example
+    code based on examples from https://jqueryvalidation.org/files/demo/
 **************************/
 
 // validate signup form on keyup and submit
